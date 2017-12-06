@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/m_i_shop"
+        android:checked="true"
+        android:icon="@mipmap/shop"
+        android:title="联盟商城" />
+
+    <!--<item-->
+        <!--android:id="@+id/m_i_unit"-->
+        <!--android:icon="@mipmap/unit"-->
+        <!--android:title="联盟商家" />-->
+
+
+
+    <item
+        android:id="@+id/m_i_cart"
+        android:icon="@mipmap/cart_un"
+        android:title="购物车" />
+
+    <item
+        android:id="@+id/m_i_me"
+        android:icon="@mipmap/menber_center"
+        android:title="会员中心" />
+
+</menu>

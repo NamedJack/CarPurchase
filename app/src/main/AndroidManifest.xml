@@ -1,0 +1,92 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ejar.carpurchase">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AtyMainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".unit.aty.ShopDetailActivity" />
+        <activity android:name=".me.aty.BecomeMerchantActivity" />
+        <activity android:name=".me.aty.BindCardActivity" />
+        <activity android:name=".me.aty.Person_Info_Activity" />
+        <activity android:name=".me.aty.SettingActivity" />
+        <activity android:name=".me.aty.ChangePwdActivity" />
+        <activity android:name=".me.aty.PayPwdActivity" />
+        <activity android:name=".me.aty.BindPhoneActivity" />
+        <activity
+            android:name=".me.aty.TakeImgActivity"
+            android:theme="@style/transeparent" />
+        <activity android:name=".me.aty.ChargeManageActivity" />
+        <activity android:name=".me.aty.WithDrawActivity" />
+        <activity android:name=".me.aty.GotoBlanceActivity" />
+        <activity android:name=".me.aty.PerformanceStatisticsActivity" />
+        <activity android:name=".me.aty.BalanceChargeActivity" />
+        <activity android:name=".me.aty.OrderDetailActivity" />
+        <activity android:name=".me.aty.OrderCenterActivity" />
+        <activity android:name=".me.aty.BillFormActivity" />
+        <activity android:name=".me.aty.AddWithDrawActivity" />
+        <activity android:name=".me.aty.ConsumeRegistrationActivity" />
+        <activity android:name=".me.aty.ConsumeInfoActivity" />
+        <activity android:name=".me.aty.ShareRegistrationActivity" />
+        <activity android:name=".me.aty.MyShareActivity" />
+        <activity android:name=".me.aty.AddShareActivity" />
+        <activity android:name=".me.aty.TransferRecordActivity" />
+        <activity android:name=".me.aty.SubmitSuccessActivity" />
+        <activity android:name=".me.aty.MyShopActivity" />
+        <activity android:name=".me.aty.ShopInfoActivity" />
+        <activity android:name=".me.aty.ShopImgActivity" />
+        <activity android:name=".me.aty.ChangeSuccessActivity" />
+        <activity android:name=".me.aty.BecomeMerchantSuccessActivity" />
+        <activity android:name=".ForgetPwdActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SlplashActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".me.aty.AgentSeePeopleActivity" />
+        <activity android:name=".me.aty.AgentEarningsActivity" />
+        <activity android:name=".me.aty.MyMemberIncomeActivity" />
+        <activity android:name=".shop.GoodDetailActivity" />
+        <activity android:name=".shop.AdressActivity" />
+        <activity android:name=".shop.AddAdressActivity" />
+        <activity android:name=".shop.OrderConfirmActivity" />
+        <activity android:name=".me.aty.TeamSeePeopleActivity" />
+        <activity android:name=".me.aty.TeamMemberActivity"></activity>
+    </application>
+</manifest>

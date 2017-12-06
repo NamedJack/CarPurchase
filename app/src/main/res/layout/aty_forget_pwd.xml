@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="2dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:id="@+id/iv_return"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/return_c"
+                    android:textColor="@color/app_color" />
+
+
+                <TextView
+                    android:transitionName="tvReSetPwd"
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:text="忘记密码"
+                    android:textColor="@color/app_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <requestFocus />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="15dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/et_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_bg_edit"
+                        android:hint="手机号"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingEnd="20dp"
+                android:paddingStart="15dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_phone_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_bg_edit"
+                        android:hint="手机验证码"
+                        android:inputType="number"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/btn_enable_selector"
+                    android:text="获取验证码"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingEnd="20dp"
+                android:paddingStart="15dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_bg_edit"
+                        android:hint="请输入新密码"
+                        android:inputType="textPassword"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingEnd="20dp"
+                android:paddingStart="15dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/et_repeatpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_bg_edit"
+                        android:hint="请再次输入新密码"
+                        android:inputType="textPassword"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingEnd="20dp"
+                android:paddingStart="15dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_bg_edit"
+                        android:hint="请输入验证码"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.ejar.carpurchase.custom.verifyCode.VerifyCode
+                    android:id="@+id/verifycode"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    app:codeBackground="@color/app_color"
+                    app:codeLength="4"
+                    app:codeTextSize="20sp"
+                    app:isContainChar="true"
+                    app:linNum="20"
+                    app:pointNum="90" />
+            </LinearLayout>
+
+
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/btn_re_set_pwd"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                app:cpb_colorIndicator="@color/app_color"
+                app:cpb_cornerRadius="15dp"
+                app:cpb_selectorIdle="@drawable/idel_state_selector"
+                app:cpb_textComplete="重置密码成功"
+                app:cpb_textError="重置密码失败"
+                app:cpb_textIdle="重置密码" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

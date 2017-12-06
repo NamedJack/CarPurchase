@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_shop_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ganxin.library.LoadDataLayout
+                android:id="@+id/cl_loaddata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_shop_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.ganxin.library.LoadDataLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+</layout>

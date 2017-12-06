@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/app_color</color>
+    <color name="colorPrimaryDark">@color/app_color</color>
+    <color name="colorAccent">@color/app_red</color>
+    <color name="trans_app_color">#bfff6a36</color>
+    <color name="app_color">#ff6a36</color>
+    <color name="colorPageBg">#f2f4f5</color>
+    <color name="divier">#d7d7d7</color>
+    <color name="app_red">#970000</color>
+    <color name="trans_app_red">#bf970000</color>
+    <color name="app_green">#4dc433</color>
+    <color name="trans_app_green">#bf4dc433</color>
+    <color name="md_green">#2ea67f</color>
+    <color name="app_bg">#f3f3f3</color>
+    <color name="app_et_hint">#d8d8d8</color>
+    <color name="app_blue">#40acff</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="message_bg">#e67843</color>
+</resources>

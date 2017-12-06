@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="txt_charge_success">#21dc86</color>
+    <color name="txt_charge_aduit">#21a5dc</color>
+    <color name="txt_remark">#ffbe67</color>
+</resources>

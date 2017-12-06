@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ejar.carpurchase.custom.NoScrollViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_above="@+id/bnve_main" />
+
+        <View
+            android:id="@+id/v_divier"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/bnve_main"
+            android:background="@color/divier" />
+
+
+
+        <com.ejar.carpurchase.custom.bnve.BottomNavigationViewEx
+           android:background="@color/white"
+            android:elevation="2dp"
+            android:id="@+id/bnve_main"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="@color/selector_bnve"
+            app:itemTextColor="@color/selector_bnve"
+            app:menu="@menu/menu_navigation" />
+    </RelativeLayout>
+</layout>
